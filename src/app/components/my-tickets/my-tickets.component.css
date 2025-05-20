@@ -1,0 +1,86 @@
+.ticket-detail-box {
+  width: 100vw;
+  min-height: 100vh;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 48px 32px 32px 48px;
+  box-sizing: border-box;
+  gap: 18px;
+}
+
+.ticket-label {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.ticket-date-input,
+.referencia-pago-input {
+  width: 100%;
+  max-width: 320px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+  font-size: 15px;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+}
+
+.comprobante-img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 8px;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+  margin: 12px 0;
+}
+
+.estado-btns {
+  display: flex;
+  gap: 18px;
+  margin: 10px 0;
+}
+
+.aprobado-btn {
+  background: #00b7b7;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 22px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.aprobado-btn:hover {
+  background: #009090;
+}
+
+.pendiente-btn {
+  background: #f3e5f5;
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 22px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.pendiente-btn:hover {
+  background: #e1bee7;
+}
+
+.observacion-input {
+  width: 100%;
+  max-width: 340px;
+  min-height: 48px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  padding: 10px;
+  font-size: 15px;
+  resize: vertical;
+  margin-top: 8px;
+  box-sizing: border-box;
+}
