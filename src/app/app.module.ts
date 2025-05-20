@@ -20,7 +20,7 @@ import { MatIconModule } from '@angular/material/icon';
 //import {Component} from '@angular/core';
 import {MatTableModule} from '@angular/material/table';
 import { VariosComponent } from './components/varios/varios.component';
-import { BienvenidaComponent } from './bienvenida/bienvenida.component';
+import { BienvenidaComponent } from './components/bienvenida/bienvenida.component';
 
 
 @NgModule({

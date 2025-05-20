@@ -5,7 +5,7 @@ import { MenuComponent } from './components/menu/menu.component';
 import { MyTicketsComponent } from './components/my-tickets/my-tickets.component';
 import { NewTicketsComponent } from './components/new-tickets/new-tickets.component';
 import { VariosComponent } from './components/varios/varios.component';
-import { BienvenidaComponent } from './bienvenida/bienvenida.component';
+import { BienvenidaComponent } from './components/bienvenida/bienvenida.component';
 
 const routes: Routes = [
   { path: '', component: BienvenidaComponent },
