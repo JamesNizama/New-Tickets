@@ -20,6 +20,7 @@ import { MatIconModule } from '@angular/material/icon';
 //import {Component} from '@angular/core';
 import {MatTableModule} from '@angular/material/table';
 import { VariosComponent } from './components/varios/varios.component';
+import { BienvenidaComponent } from './bienvenida/bienvenida.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { VariosComponent } from './components/varios/varios.component';
     MyTicketsComponent,
     NewTicketsComponent,
     MenuComponent,
-    VariosComponent
+    VariosComponent,
+    BienvenidaComponent
   ],
   imports: [
     BrowserModule,

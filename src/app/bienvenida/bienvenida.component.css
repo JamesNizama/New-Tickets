@@ -1,0 +1,77 @@
+.bienvenida-bg {
+  width: 100vw;
+  height: 100vh;
+  background: url('/assets/fondo.png') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+  position: relative;
+  overflow: hidden;
+}
+
+.bienvenida-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  justify-content: center;
+  text-align: left;
+  margin-left: 15vw;
+  margin-top: -10vh;
+  z-index: 2;
+}
+
+.bienvenida-logo {
+  display: block;
+  margin-bottom: -190px;
+  width: 550px;
+  height: auto; 
+}
+
+.bienvenida-content h1 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.2;
+  color: #fff;
+  text-align: left;
+}
+
+.bienvenida-robot {
+  position: absolute;
+  right: 7vw;
+  bottom: 0;
+  width: 420px;
+  max-width: 40vw;
+  z-index: 1;
+  pointer-events: none;
+  user-select: none;
+}
+.bienvenida-text {
+  width: 100%;
+  text-align: center;
+}
+
+.bienvenida-text h1,
+.bienvenida-content h1 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin: 0;
+  margin-top: 0;
+  line-height: 1.2;
+  color: #fff;
+  text-align: center;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.bienvenida-robot {
+  position: absolute;
+  right: 7vw;
+  bottom: 0;
+  width: 420px;
+  max-width: 40vw;
+  z-index: 1;
+  pointer-events: none;
+  user-select: none;
+}
