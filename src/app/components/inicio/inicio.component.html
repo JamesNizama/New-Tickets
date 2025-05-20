@@ -1,0 +1,96 @@
+<div class="tobar">
+  <a href="/">
+    <img src="assets/logo.png" alt="Logo" style="height: 40px;">
+  </a>
+</div>
+
+
+<div class="cards-container">
+  <div class="info-card">
+    <span class="material-icons" style="font-size: 36px;">add_circle</span>
+    <div>Nuevos Tickets</div>
+  </div>
+
+  <div class="info-card">
+    <span class="material-icons" style="font-size: 36px;">confirmation_number</span>
+    <div>Tickets</div>
+  </div>
+  <div class="info-card">
+    <span class="material-icons" style="font-size: 36px;">hourglass_empty</span>
+    <div>Estado</div>
+  </div>
+  <div class="info-card">
+    <span class="material-icons" style="font-size: 36px;">check_circle</span>
+    <div>Reportes</div>
+  </div>
+</div>
+
+
+<div class="toolbar-section">
+  <div class="search-box">
+    <span class="material-icons">search</span>
+    <input type="text" placeholder="Buscar ticket">
+  </div>
+
+  <div class="calendar-section">
+    <div class="calendar-input">
+      <span class="material-icons">calendar_today</span>
+      <input type="date" id="fecha-inicio" name="fecha-inicio">
+    </div>
+
+    <div class="calendar-input">
+      <span class="material-icons">calendar_today</span>
+      <input type="date" id="fecha-fin" name="fecha-fin">
+    </div>
+  </div>
+</div>
+  <!-- Botones en cinco columnas -->
+  <!--<div class="button-section">
+    <button class="action-button"> N° de Ticket</button>
+    <button class="action-button">Comercio</button>
+    <button class="action-button"> Referencia de pago</button>
+    <button class="action-button">Orden</button>
+    <button class="action-button">Estado</button>
+  </div>-->
+
+
+  <div class="table-container">
+    <!-- your-component.component.html -->
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+      <!-- Position Column -->
+      <ng-container matColumnDef="ticketNumber">
+        <th mat-header-cell *matHeaderCellDef class="action-button"> <div class="header-box1">N° de Ticket</div> </th>
+        <td mat-cell *matCellDef="let element"> {{element.ticketNumber}} </td>
+      </ng-container>
+
+      <!-- Name Column -->
+      <ng-container matColumnDef="comercio">
+        <th mat-header-cell *matHeaderCellDef class="action-button"> <div class="header-box">Comercio</div>  </th>
+        <td mat-cell *matCellDef="let element"> {{element.comercio}} </td>
+      </ng-container>
+
+      <!-- Weight Column -->
+      <ng-container matColumnDef="referenciaPago">
+        <th mat-header-cell *matHeaderCellDef class="action-button"> <div class="header-box">Referencia de pago</div> </th>
+        <td mat-cell *matCellDef="let element"> {{element.referenciaPago}} </td>
+      </ng-container>
+
+      <!-- Symbol Column -->
+      <ng-container matColumnDef="orden">
+        <th mat-header-cell *matHeaderCellDef class="action-button"><div class="header-box1"> Orden</div> </th>
+        <td mat-cell *matCellDef="let element"> {{element.orden}} </td>
+      </ng-container>
+
+      <!-- Symbol Column -->
+      <ng-container matColumnDef="estado">
+        <th mat-header-cell *matHeaderCellDef class="action-button"><div class="header-box">  Estado </div></th>
+        <td mat-cell *matCellDef="let element"> {{element.estado}} </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+  </div>
+
+

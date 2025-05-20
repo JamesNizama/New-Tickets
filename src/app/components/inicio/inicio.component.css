@@ -1,0 +1,199 @@
+.active-link {
+  font-weight: bold;
+  color: #00b7b7;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 10px;
+  justify-content: flex-start;
+}
+
+.info-card {
+  width: 100px;
+  height: 100px; /* fija la altura igual que el ancho */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: #00b7b7;
+  color: white;
+  border-radius: 8px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+
+.info-card:hover {
+  transform: translateY(-5px);
+}
+
+.tobar {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 70px;
+}
+
+.logo {
+  height: 60px;
+}
+
+.toolbar-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 500px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 6px 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  gap: 8px;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  background: transparent;
+}
+
+.calendar-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.calendar-input {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 6px 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  gap: 8px;
+}
+
+.calendar-input input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  background: transparent;
+}
+
+
+.button-section {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  margin-top: 20px;
+}
+
+/*.action-button {
+  background-color: #00b7b7;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  min-width: 160px; 
+}*/
+
+
+
+
+.action-button:hover {
+  background-color: #ffff;
+}
+
+.lista-contenedor {
+  padding: 20px;
+}
+
+.fila {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  width: 100%;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.fila-lila {
+  background-color: #f3e5f5; /* lila claro */
+  margin-bottom: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+/*CSS TABLA*/
+
+/* Contenedor principal donde está la tabla */
+.table-container {
+  max-width: 1200px;       /* ancho máximo deseado */
+  margin: 24px auto 0 auto;/* centrado horizontal y separación arriba */
+  padding: 0 16px;         /* espacio lateral para que no quede pegado */
+  box-sizing: border-box;
+  width: 100%;             /* ocupa todo el ancho de su padre */
+  overflow-x: auto;        /* agrega scroll horizontal si es necesario */
+}
+
+/* La tabla */
+table.mat-elevation-z8 {
+  width: 100%;             /* la tabla ocupa todo el ancho del contenedor */
+  min-width: 600px;        /* para evitar que se encoja demasiado (opcional) */
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .toolbar-section {
+    padding: 0 8px;
+    max-width: 100%;
+  }
+
+  table.mat-elevation-z8 {
+    min-width: 400px;
+  }
+}
+
+/*ENCABEZADO TABLA*/
+.header-box {
+  background-color: #00b7b7;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 8px 12px;
+  display: inline-block;     /* hace que no use todo el ancho del <th> */
+  min-width: 140px;          /* controla el tamaño */
+  text-align: center;
+}
+
+th.action-button {
+  padding: 0; /* elimina padding del th para mejor control */
+  text-align: center;
+}
+
+
+.header-box1{
+  background-color: #a965ff;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 8px 12px;
+  display: inline-block;     /* hace que no use todo el ancho del <th> */
+  min-width: 140px;          /* controla el tamaño */
+  text-align: center;
+}
+
